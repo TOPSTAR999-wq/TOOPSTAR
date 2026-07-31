@@ -537,6 +537,31 @@ background:
     color:#ffffff;
   }
 
+/* ===== PENGUMUMAN ===== */
+.announcement{
+  width:100%;
+  overflow:hidden;
+  background:#222;
+  color:#fff;
+  border:1px solid #555;
+  border-radius:12px;
+  margin-bottom:16px;
+}
+
+.announcement-track{
+  white-space:nowrap;
+  padding:12px 0;
+  display:inline-block;
+  padding-left:100%;
+  font-weight:700;
+  animation:announcementMove 18s linear infinite;
+}
+
+@keyframes announcementMove{
+  from{transform:translateX(0);}
+  to{transform:translateX(-100%);}
+}
+
   /* MOBILE */
   @media (max-width:480px){
     body{
@@ -576,6 +601,11 @@ background:
   <body>
     <div class="shell">
       <header class="header">
+        <div class="announcement">
+         <div class="announcement-track">
+             📢 Pengumuman: Ayo segera bergabung dan dapatkan  event menarik setiap harinya.
+          </div>
+        </div>
         <amp-img
           class="logo"
           src="https://i.postimg.cc/cChGxY7c/f256f348-6d73-444a-9f19-4f175418e027.png"
